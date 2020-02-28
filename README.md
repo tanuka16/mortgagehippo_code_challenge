@@ -2,7 +2,7 @@
 ------
 Welcome to the MortgageHippo Coding Challenge. For this challenge you will need to create a RESTful Rails API that will act as a Coin Machine, taking in Coins and performing a variety of functions. This README will be broken up into steps, please read through the entire README before beginning.
 
-If you have any questions during the course of this challenge please feel free to email elliott@mortgagehippo.com!
+__If you have any questions during the course of this challenge please feel free to email elliott@mortgagehippo.com!__
 
 ### Setup & Technical Requirements
 Setup for this is simple, please create a new Rails App and configure it to act exclusively with JSON format for the endpoints. Use any gems or patterns you feel are necessary, but be ready to explain any and all decisions you make along the way.
@@ -46,12 +46,6 @@ Since we don't want our Coin Machines to run low very often we will need to fill
 * Please send a single consistent email to all `Admin` emails, create an `Admin` resource to track this (single email means one email with all `Admin`s on it, not an individual email to each `Admin`)
 * The email should contain the kind of `Coin`, the count, and the current value of all `Coin`s in the system
 * Bonus Points if you send the email asynchronously
-
-### Step 5: Hosting
-Now that the API is finished and working wonderfully please deploy it to a server so that it can be hosted and accessed. There are two acceptable ways of hosting this challenge:
-
-* Deploy it to Heroku for easy mode
-* Deploy it to AWS for bonus points
 
 ## Submission
 When you are ready to submit this challenge, please email elliott@mortgagehippo.com with the following included:
