@@ -17,10 +17,10 @@ Please create a resource called `Coin`. This should have two primary attributes:
 * Create a New Coin
 * Update Attributes on an existing Coin
 * Delete a Coin from the System
-* View all Coins
-* View a single Coin
+<!-- * View all Coins -->
+<!-- * View a single Coin -->
 * Get the total Value of all Coins in the system at a given time
- 
+
 ### Step 2: Deposits
 Now that we have `Coin`s in our system we will need to track when `Coin`s are deposited. Create a new resource called `Transaction`, that will track whenever a deposit is made, one coin at a time. A `Transaction` resource should track the following information:
 
