@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :coins
-  # resources :users
-  # resources :transactions
+  resources :coins, :users, :transactions
+  resources :users
+  resources :transactions
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
