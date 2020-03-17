@@ -1,6 +1,6 @@
 class Coin < ApplicationRecord
-  belongs_to :user
-  # belongs_to :transaction
+  has_one :transactions
+  has_one :users
 
   def sum_value
     @coins = Coin.all
@@ -12,5 +12,5 @@ class Coin < ApplicationRecord
     end
     sum
   end
-  
+
 end

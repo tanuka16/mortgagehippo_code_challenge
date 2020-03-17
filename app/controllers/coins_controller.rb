@@ -9,7 +9,7 @@ class CoinsController < ApplicationController
   # View a single Coin
   def show
     @coin = Coin.find_by(:id => params[:id])
-    render json: @coin
+    render json: @coin, except: [:created_at, :updated_at]
   end
 
   # Create a New Coin
@@ -40,13 +40,14 @@ class CoinsController < ApplicationController
   end
 
   def sum
+    # byebug
     @sum = Coin.sum_value
-    render json: @sum 
+    render json: {value: @sum, message:"Total coin value is #{@sum}"}
   end
 
   private
 
   def coin_params
-    params.require(:coin).permit(:name, :value)
+    params.require(:coin).permit(:id, :name, :value, :amount)
   end
 end
